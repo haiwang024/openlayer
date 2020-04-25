@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>openLayer绘制曲线</title>
+    <link rel="stylesheet" href="css/ol.css">
+    <link rel="stylesheet" href="css/p-ol3.min.css">
+    <link rel="stylesheet" href="css/defaults.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/css/ol.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/build/ol.js"></script>
+
+</head>
+
+<body onload="init()">
+    <div id="map"></div>
+    <div id="menu">
+        <div>
+            <button type="button" onclick="activate(P.PlotTypes.CURVE)">绘制线</button>
+        </div>
+        <div>
+            <button type="button" onclick="activate(P.PlotTypes.CLOSED_CURVE)">曲线面</button>
+        </div>
+    </div>
+    <div id="delete-wrapper">
+        <div id="btn-delete" style="display:none;">删 除</div>
+    </div>
+
+    <script src="js/ol.js"></script>
+    <script src="js/p-ol3.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
